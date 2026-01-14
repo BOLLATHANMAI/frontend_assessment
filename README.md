@@ -71,14 +71,14 @@ forntend_task/
 
 ## 🛠️ Tech Stack
 
-| Layer     | Technology        |
-|-----------|-------------------|
-| Frontend  | React 18, Vite    |
-| Styling   | Tailwind CSS 3    |
-| Backend   | Node.js, Express  |
-| Database  | MongoDB, Mongoose |
-| Auth      | JWT, bcryptjs     |
-| HTTP      | Axios             |
+| Layer    | Technology        |
+| -------- | ----------------- |
+| Frontend | React 18, Vite    |
+| Styling  | Tailwind CSS 3    |
+| Backend  | Node.js, Express  |
+| Database | MongoDB, Mongoose |
+| Auth     | JWT, bcryptjs     |
+| HTTP     | Axios             |
 
 ---
 
@@ -127,23 +127,23 @@ The app will be available at `http://localhost:5173`
 ## 🔗 API Endpoints
 
 ### Authentication
-| Method | Endpoint         | Description       | Auth |
-|--------|------------------|-------------------|------|
-| POST   | /auth/register   | Register new user | ❌    |
-| POST   | /auth/login      | Login user        | ❌    |
+| Method | Endpoint       | Description       | Auth |
+| ------ | -------------- | ----------------- | ---- |
+| POST   | /auth/register | Register new user | ❌    |
+| POST   | /auth/login    | Login user        | ❌    |
 
 ### User
-| Method | Endpoint       | Description    | Auth |
-|--------|----------------|----------------|------|
-| GET    | /user/profile  | Get user data  | ✅    |
+| Method | Endpoint      | Description   | Auth |
+| ------ | ------------- | ------------- | ---- |
+| GET    | /user/profile | Get user data | ✅    |
 
 ### Tasks
-| Method | Endpoint     | Description           | Auth |
-|--------|--------------|----------------------|------|
-| GET    | /tasks       | Get all user tasks   | ✅    |
-| POST   | /tasks       | Create new task      | ✅    |
-| PUT    | /tasks/:id   | Update task          | ✅    |
-| DELETE | /tasks/:id   | Delete task          | ✅    |
+| Method | Endpoint   | Description        | Auth |
+| ------ | ---------- | ------------------ | ---- |
+| GET    | /tasks     | Get all user tasks | ✅    |
+| POST   | /tasks     | Create new task    | ✅    |
+| PUT    | /tasks/:id | Update task        | ✅    |
+| DELETE | /tasks/:id | Delete task        | ✅    |
 
 **Query Parameters for GET /tasks:**
 - `search` - Filter by title (case-insensitive)

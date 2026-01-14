@@ -1,5 +1,8 @@
 const express = require('express');
 const cors = require('cors');
+const fs = require('fs');
+const path = require('path');
+const morgan = require('morgan');
 require('dotenv').config();
 
 // Import routes
@@ -18,12 +21,13 @@ app.use(cors({
 }));
 app.use(express.json());
 
-// Request Logger
-app.use((req, res, next) => {
-  console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
-  console.log('Body:', req.body);
-  next();
-});
+// Create a write stream (in append mode)
+const accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' });
+
+// Setup the logger
+app.use(morgan('combined', { stream: accessLogStream })); // Log to file
+app.use(morgan('dev')); // Log to console for development
+
 
 // Sync Database (Create tables)
 sequelize.sync({ force: false }) // force: false preserves data
