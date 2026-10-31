@@ -91,7 +91,7 @@ forntend_task/
 
 ### 1. Clone the Repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/BOLLATHANMAI/frontend_assessment.git
 cd forntend_task
 ```
 
@@ -192,6 +192,8 @@ MIT License - Feel free to use this project for learning or production.
 
 ---
 
-## 👨‍💻 Author
+## 👩‍💻 Author
 
-Built as a full-stack demonstration project.
+**Bolla Thanmai**  
+*Full-Stack & Backend Engineer*  
+* [LinkedIn](https://www.linkedin.com/in/bolla-thanmai) • [GitHub](https://github.com/BOLLATHANMAI)
